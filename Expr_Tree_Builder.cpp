@@ -79,12 +79,7 @@ Expr_Tree_Builder::~Expr_Tree_Builder (void)
 
 
 bool Expr_Tree_Builder::parse_expr (const std::string & infix)
-{
-	// COMMENT: Do not go from infix to postfix then to tree. Instead,
-	// go directly from infix to tree. The extra step is not necessary.
-	/// Could not get it working correctly without half way implementing
-	/// a version of postfix
-	
+{	
 	std::istringstream input(infix);
 	std::string token;
 	Expr_Tree_Builder c;
